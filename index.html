@@ -25,24 +25,34 @@
              <img src="images/bag.png" alt="orderbag" class="orderbag">
         </header>
         
-        <aside>
+        <aside id="section-sidebar">
+            <nav>
+                <a href="#main-content-start" class="active">Top</a><br>
+                <a href="#menu-section">Menu</a>
+                <a href="#specials-section">Special Offers</a>
+                <a href="#location-section">Location</a>
+                <a href="#about-section">About Us</a>
+                <a href="#contact-section">Contact</a>
+            </nav>
             
         </aside>
         <!-- Контент -->
         <main id="main">
-            <img src="images/photo.jpg" alt="mainphoto" id="mainphoto">
+            <div id="main-content-start">
+                <img src="images/photo.jpg" alt="mainphoto" id="mainphoto">
 
-            <div id="search-form">
-                <input list="establishments" id="search-input" name="establishment" placeholder="Choose an establishment...">
-                <datalist id="establishments">
-                    <option value="Almaty Tole Bi st.">
-                    <option value="Astana Mangilik El st.">
-                    <option value="Atyrau Balgimbayeva st.">
-                    <option value="Taraz Abaya St.">
-                </datalist>
+                <div id="search-form">
+                    <input list="establishments" id="search-input" name="establishment" placeholder="Choose an establishment...">
+                    <datalist id="establishments">
+                        <option value="Almaty Tole Bi st.">
+                        <option value="Astana Mangilik El st.">
+                        <option value="Atyrau Balgimbayeva st.">
+                        <option value="Taraz Abaya St.">
+                    </datalist>
+                </div>
             </div>
 
-            <section class="Menu">
+            <section class="Menu" id="menu-section">
                 <h1>Menu</h1>
                 <div class="cards-menu">
                         <div class="card-menu">
@@ -79,7 +89,7 @@
                 <a href="menu.html"><button>Press to see more</button></a>
             </section>
 
-            <section class="specials">
+            <section class="specials" id="specials-section">
                 <h1>Special Offers</h1>
             
                 <div>
@@ -113,14 +123,15 @@
                 </div>
             </section>
 
-            <section class="Location">
+            <section class="Location" id="location-section">
                 <h1>Location</h1>
             </section>
-            <section class="About">
+
+            <section class="About" id="about-section">
                 <h1>About us</h1>
             </section>
 
-            <section class="Contact">
+            <section class="Contact" id="contact-section">
                 <h1>Contact</h1>
             </section>
         </main>
