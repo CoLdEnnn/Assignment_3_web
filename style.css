@@ -190,6 +190,7 @@ input:focus, textarea:focus {
     background: rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 /* Я крч сделаю для логина и локейшна */
 
@@ -446,3 +447,5 @@ input:focus, textarea:focus {
 }
 
 /* не трогайте братья пж четко стойт же поидее нет?? */
+=======
+>>>>>>> de521142b6e6f380d213c3199b6980a906fa6f0a
