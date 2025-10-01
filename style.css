@@ -91,6 +91,59 @@ a:hover {
     align-items: center;
     text-align: right;
 }
+.input-group {
+    position: relative;
+    margin-bottom: 30px; 
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    min-height: 40px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    padding-top: 15px; 
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: transform 0.3s ease, font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    transform: translateY(-25px); 
+    font-size: 0.75em;
+    background-color: white; 
+    padding: 0 5px; 
+    left: 5px; 
+    color: #313131;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-buttons{
+    padding: 10px;
+}
+.form-buttons button{
+    width: 100px;
+    height: 25px;
+    border-radius: 35px;
+}
 
 #main {
     /* background-color: #fef7de; */
@@ -121,7 +174,13 @@ footer {
     padding: 2rem;
     width: 100%;
 }
-
+.barista{
+    width: 500px;
+    height: 500px;
+}
+.coffee-beans {
+    width: 500px;
+}
 button {
     color: rgb(255, 255, 255);
     background-color: #a98501;
@@ -200,7 +259,6 @@ input:focus, textarea:focus {
 }
 
 .card {
-    /* max-width: 100px; */
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -281,7 +339,7 @@ main   {
     border-left-color: #000000;
 }
 
-main section {
+.special-page main section {
     min-height: 80vh; 
     padding: 50px 20px;
     margin-bottom: 20px;
@@ -292,7 +350,7 @@ main section {
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-main section:target {
+.special-page main section:target {
     border: 1px solid #313131;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
@@ -306,6 +364,24 @@ main section:target {
     cursor: pointer;
 }
 
+.cards-location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card-location {
+    background: #f8f4f4;
+    border-radius: 10px;
+    text-align: center;
+    width: 450px;
+}
+.card-location img {
+    width: 100%;
+}
 .cards-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -333,6 +409,46 @@ main section:target {
 .card-menu:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.password-img {
+    width: 250px;
+    height: 250px;
+}
+.password-reset {
+    padding: 15px;
+}
+.password-reset button{ 
+    background-color: #0066cc;
+    width: 50px;
+    height: 25px;
+}
+
+.auth-form {
+    border-radius: 10px;
+}
+.auth-form button {
+    border-radius: 10px;
+    border: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 350px;
+  display: block;
 }
 
 @media (max-width: 900px) {
