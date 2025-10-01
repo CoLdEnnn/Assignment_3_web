@@ -1,0 +1,192 @@
+body {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+nav {
+    top: 10px;
+    position: relative;
+    margin-left: auto;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px 5px;
+    border-radius: 50%; 
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #999999;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #999999;
+    transform: translateY(-2px);
+    transition: color 0.25s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active {
+    color: #999999;
+    font-weight: 600;
+}
+
+nav a.active::after {
+    width: 100%;
+    background-color: #999999;
+    height: 3px;
+}
+
+#search-form {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#search-form input {
+    border-radius: 15px;
+    border: none;
+    width: 350px;
+    height: 30px;
+    background-color: #f3f3f3;
+    font-size: 1rem;
+    padding: 5px;
+}
+#search-form input:focus{
+    color: #000000;
+}
+
+#search-form input:focus + label {
+    transform: translateY(-20px);
+    color: #000000;
+}
+
+a:hover {
+    color: rgb(209, 150, 0);
+    text-decoration: underline;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#main {
+    /* background-color: #fef7de; */
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#mainphoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#coffee-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    bottom: 0;
+    height: 50px;
+    padding: 1rem;
+    width: 100%;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: #a98501;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+
+}
+
+input:focus, textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+#logo {
+    width: 220px;
+    height: 90px;
+    cursor: pointer;
+    top: 15px;
+    left: 30px;
+    position: relative;
+    margin-right: auto;
+}
+
+.login {
+    width: 45px;
+    height: 45px;
+    top: 10px;
+    right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.7s;
+    position: relative;
+}
+
+.login:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.orderbag {
+    margin-top: 18px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.7s;
+}
+
+.orderbag:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
